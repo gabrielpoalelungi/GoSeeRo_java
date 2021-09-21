@@ -1,0 +1,75 @@
+.container-fluid {
+  width: 100%;
+  max-width: 1700px;
+}
+
+.container-relative {
+  position: relative;
+}
+
+section {
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.section-blue {
+  background-color: var(--light-blue);
+}
+
+.section-light-blue {
+  background-color: #f7fdff;
+}
+
+.section-pink {
+  background-color: var(--pink);
+}
+
+.hero-section-content h1,
+.hero-section-content p {
+  color: var(--dark-blue);
+}
+
+.hero-section-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.hero-section-content .red-button {
+  width: 20%;
+  padding: 7px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.section-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+
+.section-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.hero-section-image-container img {
+  max-height: 700px;
+}
+
+.flip-card-container {
+  margin-top: 100px;
+}
+
+.ellipse {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+p {
+  z-index: 999;
+}

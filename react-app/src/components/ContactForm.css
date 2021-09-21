@@ -1,0 +1,51 @@
+form {
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto 0px auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--dark-blue);
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    border-bottom: 1.25px solid var(--dark-blue);
+    padding: 7px;
+    margin-top: 5px;
+}
+
+
+.form-group input:focus-visible,
+.form-group textarea:focus-visible {
+    outline: none;
+}
+
+.form-group textarea {
+    height: 200px;
+}
+
+.form-group-submit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-group-submit input {
+    border: none;
+    outline: none;
+    background-color: var(--light-pink);
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 7px 20px;
+    border-radius: 25px;
+}

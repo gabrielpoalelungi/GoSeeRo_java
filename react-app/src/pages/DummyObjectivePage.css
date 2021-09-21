@@ -1,0 +1,47 @@
+/*.carousel-fixed {
+  padding-left: 5%;
+}
+
+*/
+.owl-carousel-container,
+.owl-carousel,
+.owl-stage-outer,
+.owl-stage,
+.owl-item,
+.item {
+  height: 100%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: black !important;
+  border: 1px solid white;
+}
+
+.span-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.span-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  padding-bottom: 0;
+  scroll-snap-align: start;
+}

@@ -1,0 +1,80 @@
+:root {
+  --light-blue: #c5f3ff;
+  --blue: #afefff;
+  --light-pink: #fde9ef;
+  --pink: #fddfe8;
+  --red: #ff4881;
+  --dark-blue: #000d83;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  resize: none !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.col-10 {
+  margin: 0 auto;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-y-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-x-center {
+  display: flex;
+  justify-content: center;
+}
+
+.red-button {
+  background-color: var(--red);
+  color: white;
+  font-weight: 600;
+  padding: 7px 15px;
+}
+
+.blue-line {
+  width: 10%;
+  height: 3px;
+  background-color: var(--dark-blue);
+  margin: 20px 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--dark-blue);
+  font-weight: 700;
+}

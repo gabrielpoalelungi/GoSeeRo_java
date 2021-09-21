@@ -1,0 +1,10 @@
+.content-div {
+  padding: 10px 20% 20px;
+}
+
+.about-content-section p {
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--dark-blue);
+}

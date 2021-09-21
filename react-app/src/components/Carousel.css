@@ -1,0 +1,41 @@
+/*.carousel {
+  width: 40%;
+  height: 750px;
+  padding-top: 5%;
+  padding-left: 0%;
+  position: fixed;
+}
+
+.carousel-inner {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel-inner .left {
+  flex: 5%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.carousel-inner .center {
+  flex: 90%;
+  height: 100%;
+}
+
+.carousel-inner .right {
+  flex: 5%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  color: white;
+  cursor: pointer;
+}*/

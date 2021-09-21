@@ -1,0 +1,18 @@
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--dark-blue) !important;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.logo {
+  width: 125px;
+}
+
+.nav-link {
+  margin-left: 1rem;
+}
