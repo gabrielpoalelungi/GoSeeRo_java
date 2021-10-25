@@ -12,8 +12,12 @@ import java.util.List;
 @Service
 public class LandmarkService {
 
+    private final LandmarkRepo landmarkRepo;
+
     @Autowired
-    LandmarkRepo landmarkRepo;
+    public LandmarkService(LandmarkRepo landmarkRepo) {
+        this.landmarkRepo = landmarkRepo;
+    }
 
     public List<Landmark> getAll() {
         return landmarkRepo.findAll();
@@ -70,8 +74,8 @@ public class LandmarkService {
         }
 
         // Accessibility Star Rating
-        if (landmark.getStarRatingAcessibilityLandmark() > 0 && landmark.getStarRatingAcessibilityLandmark() <= 5.0) {
-            landmarkToSave.setStarRatingAcessibilityLandmark(landmark.getStarRatingAcessibilityLandmark());
+        if (landmark.getStarRatingAccessibilityLandmark() > 0 && landmark.getStarRatingAccessibilityLandmark() <= 5.0) {
+            landmarkToSave.setStarRatingAccessibilityLandmark(landmark.getStarRatingAccessibilityLandmark());
         } else {
             throw new LandmarkInvalidDataException("add: Landmark Invalid Star Rating Accessibility");
         }
@@ -165,8 +169,8 @@ public class LandmarkService {
         }
 
         // Accessibility Star Rating
-        if (landmark.getStarRatingAcessibilityLandmark() > 0 && landmark.getStarRatingAcessibilityLandmark() <= 5.0) {
-            landmarkToUpdate.setStarRatingAcessibilityLandmark(landmark.getStarRatingAcessibilityLandmark());
+        if (landmark.getStarRatingAccessibilityLandmark() > 0 && landmark.getStarRatingAccessibilityLandmark() <= 5.0) {
+            landmarkToUpdate.setStarRatingAccessibilityLandmark(landmark.getStarRatingAccessibilityLandmark());
         } else {
             throw new LandmarkInvalidDataException("update: Landmark Invalid Star Rating Accessibility");
         }

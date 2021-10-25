@@ -15,8 +15,13 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/landmarks")
 public class LandmarkController {
+
+    private final LandmarkService landmarkService;
+
     @Autowired
-    LandmarkService landmarkService;
+    public LandmarkController(LandmarkService landmarkService) {
+        this.landmarkService = landmarkService;
+    }
 
     @GetMapping(value = {"", "/"})
     public ResponseEntity<List<Landmark>> getAllLandmarks() {

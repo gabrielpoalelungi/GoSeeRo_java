@@ -1,6 +1,5 @@
 package com.goseero.goseero_spring_boot.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -33,7 +32,7 @@ public class Landmark {
     private String popularityRatingTextLandmark;
 
     @Column(name = "accessibility_star", nullable = false)
-    private Float starRatingAcessibilityLandmark;
+    private Float starRatingAccessibilityLandmark;
 
     @Column(name = "quality_star", nullable = false)
     private Float starRatingQualityLandmark;
@@ -54,25 +53,7 @@ public class Landmark {
     public Landmark() {
     }
 
-    public Landmark(String nameLandmark, String generalDescriptionTextLandmark, String accessibilityRatingTextLandmark, String qualityRatingTextLandmark, String trustRatingTextLandmark, String popularityRatingTextLandmark, Float starRatingAcessibilityLandmark, Float starRatingQualityLandmark, Float starRatingTrustLandmark, Float starRatingPopularityLandmark, Float latitudeLandmark, Float longitudeLandmark) {
-        this.nameLandmark = nameLandmark;
-        this.generalDescriptionTextLandmark = generalDescriptionTextLandmark;
-        this.accessibilityRatingTextLandmark = accessibilityRatingTextLandmark;
-        this.qualityRatingTextLandmark = qualityRatingTextLandmark;
-        this.trustRatingTextLandmark = trustRatingTextLandmark;
-        this.popularityRatingTextLandmark = popularityRatingTextLandmark;
-        this.starRatingAcessibilityLandmark = starRatingAcessibilityLandmark;
-        this.starRatingQualityLandmark = starRatingQualityLandmark;
-        this.starRatingTrustLandmark = starRatingTrustLandmark;
-        this.starRatingPopularityLandmark = starRatingPopularityLandmark;
-        this.latitudeLandmark = latitudeLandmark;
-        this.longitudeLandmark = longitudeLandmark;
-    }
-//CREATE TABLE landmarks(id BIGINT, name VARCHAR(50), general_description_text VARCHAR(500), accessibility_text VARCHAR(500), quality_text VARCHAR(500), trust_text VARCHAR(500), popularity_text VARCHAR(500), accessibility_star SMALLINT, quality_star SMALLINT, trust_star SMALLINT, popularity_star SMALLINT, latitude FLOAT, longitude FLOAT
     // Getters
-    public Long getIdLandmark() {
-        return idLandmark;
-    }
 
     public String getNameLandmark() {
         return nameLandmark;
@@ -98,8 +79,8 @@ public class Landmark {
         return popularityRatingTextLandmark;
     }
 
-    public Float getStarRatingAcessibilityLandmark() {
-        return starRatingAcessibilityLandmark;
+    public Float getStarRatingAccessibilityLandmark() {
+        return starRatingAccessibilityLandmark;
     }
 
     public Float getStarRatingQualityLandmark() {
@@ -123,10 +104,6 @@ public class Landmark {
     }
 
     //Setters
-
-    public void setIdLandmark(Long idLandmark) {
-        this.idLandmark = idLandmark;
-    }
 
     public void setNameLandmark(String nameLandmark) {
         this.nameLandmark = nameLandmark;
@@ -152,8 +129,8 @@ public class Landmark {
         this.popularityRatingTextLandmark = popularityRatingTextLandmark;
     }
 
-    public void setStarRatingAcessibilityLandmark(Float starRatingAcessibilityLandmark) {
-        this.starRatingAcessibilityLandmark = starRatingAcessibilityLandmark;
+    public void setStarRatingAccessibilityLandmark(Float starRatingAccessibilityLandmark) {
+        this.starRatingAccessibilityLandmark = starRatingAccessibilityLandmark;
     }
 
     public void setStarRatingQualityLandmark(Float starRatingQualityLandmark) {
@@ -181,11 +158,11 @@ public class Landmark {
         if (this == o) return true;
         if (!(o instanceof Landmark)) return false;
         Landmark landmark = (Landmark) o;
-        return Float.compare(landmark.starRatingAcessibilityLandmark, starRatingAcessibilityLandmark) == 0 && Float.compare(landmark.starRatingQualityLandmark, starRatingQualityLandmark) == 0 && Float.compare(landmark.starRatingTrustLandmark, starRatingTrustLandmark) == 0 && Float.compare(landmark.starRatingPopularityLandmark, starRatingPopularityLandmark) == 0 && Float.compare(landmark.latitudeLandmark, latitudeLandmark) == 0 && Float.compare(landmark.longitudeLandmark, longitudeLandmark) == 0 && Objects.equals(idLandmark, landmark.idLandmark) && Objects.equals(nameLandmark, landmark.nameLandmark) && Objects.equals(generalDescriptionTextLandmark, landmark.generalDescriptionTextLandmark) && Objects.equals(accessibilityRatingTextLandmark, landmark.accessibilityRatingTextLandmark) && Objects.equals(qualityRatingTextLandmark, landmark.qualityRatingTextLandmark) && Objects.equals(trustRatingTextLandmark, landmark.trustRatingTextLandmark) && Objects.equals(popularityRatingTextLandmark, landmark.popularityRatingTextLandmark);
+        return Float.compare(landmark.starRatingAccessibilityLandmark, starRatingAccessibilityLandmark) == 0 && Float.compare(landmark.starRatingQualityLandmark, starRatingQualityLandmark) == 0 && Float.compare(landmark.starRatingTrustLandmark, starRatingTrustLandmark) == 0 && Float.compare(landmark.starRatingPopularityLandmark, starRatingPopularityLandmark) == 0 && Float.compare(landmark.latitudeLandmark, latitudeLandmark) == 0 && Float.compare(landmark.longitudeLandmark, longitudeLandmark) == 0 && Objects.equals(idLandmark, landmark.idLandmark) && Objects.equals(nameLandmark, landmark.nameLandmark) && Objects.equals(generalDescriptionTextLandmark, landmark.generalDescriptionTextLandmark) && Objects.equals(accessibilityRatingTextLandmark, landmark.accessibilityRatingTextLandmark) && Objects.equals(qualityRatingTextLandmark, landmark.qualityRatingTextLandmark) && Objects.equals(trustRatingTextLandmark, landmark.trustRatingTextLandmark) && Objects.equals(popularityRatingTextLandmark, landmark.popularityRatingTextLandmark);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idLandmark, nameLandmark, generalDescriptionTextLandmark, accessibilityRatingTextLandmark, qualityRatingTextLandmark, trustRatingTextLandmark, popularityRatingTextLandmark, starRatingAcessibilityLandmark, starRatingQualityLandmark, starRatingTrustLandmark, starRatingPopularityLandmark, latitudeLandmark, longitudeLandmark);
+        return Objects.hash(idLandmark, nameLandmark, generalDescriptionTextLandmark, accessibilityRatingTextLandmark, qualityRatingTextLandmark, trustRatingTextLandmark, popularityRatingTextLandmark, starRatingAccessibilityLandmark, starRatingQualityLandmark, starRatingTrustLandmark, starRatingPopularityLandmark, latitudeLandmark, longitudeLandmark);
     }
 }

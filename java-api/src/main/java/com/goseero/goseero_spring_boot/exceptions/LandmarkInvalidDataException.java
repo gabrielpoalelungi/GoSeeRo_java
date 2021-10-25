@@ -4,7 +4,4 @@ public class LandmarkInvalidDataException extends Exception {
     public LandmarkInvalidDataException(String message) {
         super(message);
     }
-
-    public LandmarkInvalidDataException() {
-    }
 }
